@@ -14,6 +14,8 @@ dotenv.config();
 
 const app = express();
 
+console.log("FRONTEND_URL from ENV:", process.env.FRONTEND_URL);
+
 // Middleware
 app.use(cors({
   origin: process.env.FRONTEND_URL || 'http://localhost:3000',
